@@ -2,9 +2,255 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Dashboard Summary</title>
+    <link rel="stylesheet" type="text/css" href="normalize.7.0.0.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <aside class="collapsible-aside-container">
+      <section class="aside-profile-container">
+        <img class="aside-profile-photo" src="images/photos/profile-photo.png" alt="" />
+        <div class = "name-and-arrow">
+          <p class="aside-profile-name">Newton Barley</p>
+          <img class="icon-down-arrow" src="images/icons/icon-down-arrow-grey.svg" />
+        </div>
+      </section>
+      <section class="aside-main-nav-container">
+        <h3 class="aside-main-nav-title">Main</h3>
+        <nav>
+          <ul class="aside-main-nav-list">
+            <div class="home-container aside-list-item">
+              <li class="aside-home aside-main-nav-item uppercase"><p>home<p></li>
+            </div>
+            <div class="jobs-container aside-list-item">
+              <li class="aside-jobs aside-main-nav-item uppercase"><p>jobs<p></li>
+            </div>
+            <div class="resumes-container aside-list-item">
+              <li class="aside-resumes aside-main-nav-item uppercase"><p>resumes</p></li>
+            </div>
+            <div class="tasks-container aside-list-item">
+              <li class="aside-tasks aside-main-nav-item uppercase"><p>tasks</p></li>
+            </div>
+            <div class="calendar-container aside-list-item">
+              <li class="aside-calendar aside-main-nav-item uppercase"><p>calendar</p></li>
+            </div>
+          </ul>
+        </nav>
+      </section>
+      <section class="aside-admin-nav-container">
+        <h3 class="aside-admin-nav-title">Admin</h3>
+        <nav>
+          <ul class="aside-admin-nav-list">
+            <div class="users-container aside-list-item">
+              <li class="aside-users aside-admin-nav-item uppercase"><p>users</p></li>
+            </div>
+            <div class="locations-container aside-list-item">
+              <li class="aside-locations aside-admin-nav-item uppercase"><p>locations</p></li>
+            </div>
+            <div class="workflows-container aside-list-item">
+              <li class="aside-workflows aside-admin-nav-item uppercase"><p>workflows</p></li>
+            </div>
+            <div class="job-boards-container aside-list-item">
+              <li class="aside-job-boards aside-admin-nav-item uppercase"><p>job boards</p></li>
+            </div>
+            <div class="social-container aside-list-item">
+              <li class="aside-social aside-admin-nav-item uppercase"><p>social</p></li>
+            </div>
+          </ul>
+        </nav>
+      </section class="aside-categories-nav-container">
+      <h3 class="aside-categories-nav-title">Categories</h3>
+        <nav>
+          <ul class="aside-categories-nav-list">
+            <div class="nav-list-item">
+              <label class="aside-categories-nav-label">
+                  <li class="aside-categories-nav-item">
+                    <input type="radio" name="categories" id="cb-1"></input>
+                    <span>Administrative</span>
+                  </li>
+              </label>
+            </div>
+            <div class="nav-list-item">
+              <label class="aside-categories-nav-label">
+                <li class="aside-categories-nav-item">
+                  <input type="radio" name="categories" id="cb-2"></input>
+                  <span>Design</span>
+                </li>
+              </label>
+            </div>
+            <div class="nav-list-item">
+              <label class="aside-categories-nav-label">
+                <li class="aside-categories-nav-item">
+                  <input type="radio" name="categories" id="cb-3"></input>
+                  <span>Executive</span
+                </li>
+              </label>
+            </div>
+            <div class="nav-list-item">
+              <label class="aside-categories-nav-label">
+                <li class="aside-categories-nav-item">
+                  <input type="radio" name="categories" id="cb-4"></input>
+                  <span>Human Resources</span>
+                </li>
+              </label>
+            </div>
+          </ul>
+        </nav>
+      </section>
+    </aside>
+    <header class="header-container">
+      <section class="header-hamburger-container">
+        <button class="search-bar-hamburger-button header-button"></button>
+      </section>
+      <section class="search-bar-container">
+        <input type="text" class="header-search-bar-input" placeholder="Search for a job, task, or resume"></input>
+      </section>
+      <section class="header-add-job-container">
+        <button class="header-add-job-button header-button"></button>
+      </section>
+      <section class="header-add-to-calendar-container">
+        <button class="header-add-to-calendar-button header-button"></button>
+      </section>
+      <section class="header-show-grid-container">
+        <button class="header-show-grid-button header-button"></button>
+      </section>
+    </header>
+    <main>
+      <section class="job-title-container">
+        <article class="job-title">
+          <h1>Customer Service Representative</h1>
+        </article>
+        <article class="city-preview">
+          <p class="city-preview-text"><img class="icon-job-location" src="images/icons/icon-locations-bluegrey.svg" alt="" />San Fransisco, CA ⋅ <a class="preview-post-link" href="#">Preview this post</a></p>
+        </article>
+        <article class="job-title-button-container">
+          <button class="button-open job-title-button">
+            <div>
+              <img class="green-circle" src="images/icons/icon-open-green.svg" />
+              <p>open</p>
+          </button>
+          <button class="button-bookmark job-title-button"></button>
+          <button class="button-edit job-title-button"></button>
+          <button class="button-delete job-title-button"></button>
+        </article>
+        <article class="main-top-nav-container">
+          <nav class="main-top-nav">
+            <ul class"main-top-nav-list">
+              <li class="first-list-item main-top-nav-list-item uppercase">summary</li>
+              <li class="main-top-nav-list-item uppercase">applicants</li>
+              <li class="main-top-nav-list-item uppercase">job board</li>
+              <li class="main-top-nav-list-item uppercase">interviews</li>
+              <li class="main-top-nav-list-item uppercase">activity</li>
+              <li class="main-top-nav-list-item uppercase">broadcast</li>
+              <li class="main-top-nav-list-item uppercase">notifications</li>
+            </ul>
+          </nav>
+        </article>
+      </section>
+      <section class="data-viz-container">
+        <article class="pie-graph-container">
+              <img class="pie-chart-1 pie-chart" src="images/data-viz/graph-circle1.svg" alt="" />
+              <img class="pie-chart-2 pie-chart" src="images/data-viz/graph-circle2.svg" alt="" />
+              <img class="pie-chart-3 pie-chart" src="images/data-viz/graph-circle3.svg" alt="" />
+        </article>
+        <article class="bar-graph-container">
+          <img class="bar-graph" src="images/data-viz/graph.png" />
+        </article>
+        <article class="pie-graph-button-container">
+          <button class="data-viz-button">TOTALS ⋅ Out of 5,231 views</button>
+        </article>
+        <article class="bar-graph-button-container">
+          <button class="data-viz-button">APPLICANTS/DAY</button>
+        </article>
+      </section>
+      <section class="job-description-collapse">
+        <!-- <img class="job-description-collapse-button" src="images/icons/icon-arrow-in-circle-grey.svg" alt="" /> -->
 
+      </section>
+      <section class="job-description-container">
+        <article class="job-description-box">
+          <div class="job-description-text-box-title">
+            <h4 class="job-description-text-box-header">Job Description</h4>
+            <a href="#"><button class="job-description-edit-button"><p>EDIT</p></button></a>
+          </div>
+          <div class="job-description-text-box-card cell">
+            <p class="job-description-box-position-title jd-title">Position Title</p>
+            <p class="job-description-box-position-text jd-text">Customer Service Representative</p>
+          </div>
+          <div class="job-description-text-box-card cell">
+            <p class="jd-title">Location</p>
+            <p class="jd-text">San Francisco, CA</p>
+          </div>
+          <div class="job-description-text-box-card cell">
+            <p class="jd-title">Employment Type</p>
+            <p class="jd-text">Full-Time</p>
+          </div>
+          <div class="job-description-text-box-card cell">
+            <p class="jd-title">Experience</p>
+            <p class="jd-text">Mid-level</p>
+          </div>
+          <div class="job-description-text-box-card cell">
+            <p class="jd-title">Status</p>
+            <p class="jd-text">Open</p>
+          </div>
+          <div class="job-description-text-box-card cell">
+            <p class="jd-title">Description</p>
+            <p class="jd-text">The Customer Service Representative is responsible for interacting with and providing quality assurance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwhich.</p>
+          </div>
+          <div class="job-description-text-box-card cell">
+            <p class="jd-title">Hiring Lead</p>
+            <img class="jd-image" src="images/photos/circle-photo-color.jpg" alt="" />
+            <p class="jd-text jd-image-text">Tom Tizzy</p>
+          </div>
+          <div class="job-description-text-box-card">
+            <p class="jd-title">Approved Salary</p>
+            <p class="jd-text">$58,000</p>
+          </div>
+        </article>
+        <article class="social-media-and-links-and-email">
+          <div class="social-media-buttons">
+            <button class="social-media-facebook-button social-button">Post to Facebook</button>
+            <button class="social-media-twitter-button social-button">Tweet this Job</button>
+            <button class="social-media-linked-in-button social-button">Post to LinkedIn</button>
+          </div>
+          <div class="link-box lb1">
+            <h5 class="uppercase">
+              <img class="link-icon" src="images/icons/icon-globe-grey.svg" alt="" />
+              Link to this Job
+            </h5 class="uppercase">
+            <p>They key is to have every key, the key to open every door. </p>
+            <div class="link-text-and-button">
+              <input class="link-text" type="textarea" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+              <button class="link-button">Copy</button>
+            </div>
+          </div>
+          <div class="link-box lb2">
+            <h5 class="uppercase">
+              <img class="link-icon" src="images/icons/icon-email-grey.svg" alt="" />
+              Link to this Job
+            </h5>
+            <p>They key is to have every key, the key to open every door. </p>
+            <div class="link-text-and-button">
+              <input class="link-text" type="textarea" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+              <button class="link-button">Copy</button>
+            </div>
+          </div>
+          <div class="link-box lb3">
+            <h5>
+              <img class="link-icon" src="images/icons/icon-widget-grey.svg" alt="" />
+              Link to this Job
+            </h5>
+            <p>They key is to have every key, the key to open every door.</p>
+            <div class="link-text-and-button last-item">
+              <input class="link-text" type="textarea" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+              <button class="link-button ">Copy</button>
+            </div>
+          </div>
+      </section>
+      <section class="empty-left"></section>
+      <section class="empty-right"></section>
+    </main>
   </body>
 </html>
