@@ -6,5 +6,5 @@
 
 ## My Attempt
 
-![My Attempt](images/etc/comp-3-screenshot.png)
+![My Attempt](images/etc/FireShot Capture 1 - Dashboard Summary_ - file____Users_votto_turing_mod1_am-.png)
 
