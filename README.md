@@ -2,7 +2,7 @@
 
 ## Given Spec
 
-![](/images/etc/comp-3-high-res.jpg)
+![Given Spec](/images/etc/comp-3-high-res.jpg)
 
 ## My Attempt
 
