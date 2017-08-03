@@ -6,3 +6,5 @@
 
 ## My Attempt
 
+![My Attempt](images/etc/comp-3-screenshot.png)
+
