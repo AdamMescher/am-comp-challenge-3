@@ -6,5 +6,5 @@
 
 ## My Attempt
 
-![My Attempt](images/etc/)
+![My Attempt](images/etc/comp-3-ss.png)
 
