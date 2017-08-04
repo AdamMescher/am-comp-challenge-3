@@ -1400,7 +1400,7 @@ h5 {
 @media (max-width: 600px){
 
   input[type="text"]::placeholder{
-    margin-right: 10px;
+    margin-right: 5px;
     text-overflow: ellipsis;
   }
 
