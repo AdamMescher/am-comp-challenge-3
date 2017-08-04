@@ -1356,7 +1356,7 @@ h5 {
 
   .header-container {
     display: grid;
-    grid-template-columns: 15% 40% 15% 15% 15%;
+    grid-template-columns: 12% 48% 12% 12% 12%;
   }
 
   input[type="text"]{
@@ -1398,6 +1398,11 @@ h5 {
 }
 
 @media (max-width: 600px){
+
+  input[type="text"]::placeholder{
+    margin-right: 10px;
+    text-overflow: ellipsis;
+  }
 
   .job-title h1 {
     font-size: 1em;
