@@ -2,111 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Dashboard Summary</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="normalize.7.0.0.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <aside class="collapsible-aside-container">
-      <section class="aside-profile-container">
-        <img class="aside-profile-photo" src="images/photos/profile-photo.png" alt="" />
-        <div class = "name-and-arrow">
-          <p class="aside-profile-name">Newton Barley</p>
-          <img class="icon-down-arrow" src="images/icons/icon-down-arrow-grey.svg" />
-        </div>
-      </section>
-    <hr class="aside-line-break"/>
-      <section class="aside-main-nav-container">
-        <h3 class="aside-main-nav-title">Main</h3>
-        <nav>
-          <ul class="aside-main-nav-list">
-            <div class="home-container aside-list-item">
-              <li class="aside-home aside-main-nav-item uppercase"><p>home<p></li>
-            </div>
-            <div class="jobs-container aside-list-item">
-              <li class="aside-jobs aside-main-nav-item uppercase"><p>jobs<p></li>
-            </div>
-            <div class="resumes-container aside-list-item">
-              <li class="aside-resumes aside-main-nav-item uppercase"><p>resumes</p></li>
-            </div>
-            <div class="tasks-container aside-list-item">
-              <li class="aside-tasks aside-main-nav-item uppercase"><p>tasks</p></li>
-            </div>
-            <div class="calendar-container aside-list-item">
-              <li class="aside-calendar aside-main-nav-item uppercase"><p>calendar</p></li>
-            </div>
-          </ul>
-        </nav>
-      </section>
-      <hr class="aside-line-break"/>
-      <section class="aside-admin-nav-container">
-        <h3 class="aside-admin-nav-title">Admin</h3>
-        <nav>
-          <ul class="aside-admin-nav-list">
-            <div class="users-container aside-list-item">
-              <li class="aside-users aside-admin-nav-item uppercase"><p>users</p></li>
-            </div>
-            <div class="locations-container aside-list-item">
-              <li class="aside-locations aside-admin-nav-item uppercase"><p>locations</p></li>
-            </div>
-            <div class="workflows-container aside-list-item">
-              <li class="aside-workflows aside-admin-nav-item uppercase"><p>workflows</p></li>
-            </div>
-            <div class="job-boards-container aside-list-item">
-              <li class="aside-job-boards aside-admin-nav-item uppercase"><p>job boards</p></li>
-            </div>
-            <div class="social-container aside-list-item">
-              <li class="aside-social aside-admin-nav-item uppercase"><p>social</p></li>
-            </div>
-          </ul>
-        </nav>
-      </section class="aside-categories-nav-container">
-      <hr class="aside-line-break"/>
-      <section>
-        <h3 class="aside-categories-nav-title">Categories</h3>
-        <nav>
-          <ul class="aside-categories-nav-list">
-            <div class="nav-list-item">
-              <label class="aside-categories-nav-label">
-                  <li class="aside-categories-nav-item">
-                    <input type="radio" name="categories" id="cb-1"></input>
-                    <span>Administrative</span>
-                  </li>
-              </label>
-            </div>
-            <div class="nav-list-item">
-              <label class="aside-categories-nav-label">
-                <li class="aside-categories-nav-item">
-                  <input type="radio" name="categories" id="cb-2"></input>
-                  <span>Design</span>
-                </li>
-              </label>
-            </div>
-            <div class="nav-list-item">
-              <label class="aside-categories-nav-label">
-                <li class="aside-categories-nav-item">
-                  <input type="radio" name="categories" id="cb-3"></input>
-                  <span>Executive</span
-                </li>
-              </label>
-            </div>
-            <div class="nav-list-item">
-              <label class="aside-categories-nav-label">
-                <li class="aside-categories-nav-item">
-                  <input type="radio" name="categories" id="cb-4"></input>
-                  <span>Human Resources</span>
-                </li>
-              </label>
-            </div>
-          </ul>
-        </nav>
-      </section>
-    </aside>
     <header class="header-container">
       <section class="header-hamburger-container">
-        <button class="search-bar-hamburger-button header-button"></button>
+        <button class="search-bar-hamburger-button header-button" tabindex="1"></button>
       </section>
       <section class="search-bar-container">
         <input type="text" class="header-search-bar-input" placeholder="Search for a job, task, or resume"></input>
@@ -121,6 +26,101 @@
         <button class="header-show-grid-button header-button"></button>
       </section>
     </header>
+    <aside class="collapsible-aside-container">
+      <section class="aside-profile-container">
+        <img class="aside-profile-photo" src="images/photos/profile-photo.png" alt="" />
+        <div class = "name-and-arrow">
+          <p class="aside-profile-name">Newton Barley</p>
+          <img class="icon-down-arrow" src="images/icons/icon-down-arrow-grey.svg" />
+        </div>
+      </section>
+      <hr class="aside-line-break"/>
+      <section class="aside-main-nav-container">
+        <h3 class="aside-main-nav-title">Main</h3>
+        <nav>
+          <ul class="aside-main-nav-list">
+            <div class="home-container aside-list-item">
+              <li class="aside-home aside-main-nav-item uppercase"><p tabindex="0">home<p></li>
+            </div>
+            <div class="jobs-container aside-list-item">
+              <li class="aside-jobs aside-main-nav-item uppercase"><p tabindex="0">jobs<p></li>
+            </div>
+            <div class="resumes-container aside-list-item">
+              <li class="aside-resumes aside-main-nav-item uppercase"><p tabindex="0">resumes</p></li>
+            </div>
+            <div class="tasks-container aside-list-item">
+              <li class="aside-tasks aside-main-nav-item uppercase"><p tabindex="0">tasks</p></li>
+            </div>
+            <div class="calendar-container aside-list-item">
+              <li class="aside-calendar aside-main-nav-item uppercase"><p tabindex="0">calendar</p></li>
+            </div>
+          </ul>
+        </nav>
+      </section>
+      <hr class="aside-line-break"/>
+      <section class="aside-admin-nav-container">
+        <h3 class="aside-admin-nav-title">Admin</h3>
+        <nav>
+          <ul class="aside-admin-nav-list">
+            <div class="users-container aside-list-item">
+              <li class="aside-users aside-admin-nav-item uppercase"><p tabindex="0">users</p></li>
+            </div>
+            <div class="locations-container aside-list-item">
+              <li class="aside-locations aside-admin-nav-item uppercase"><p tabindex="0">locations</p></li>
+            </div>
+            <div class="workflows-container aside-list-item">
+              <li class="aside-workflows aside-admin-nav-item uppercase"><p tabindex="0">workflows</p></li>
+            </div>
+            <div class="job-boards-container aside-list-item">
+              <li class="aside-job-boards aside-admin-nav-item uppercase"><p tabindex="0">job boards</p></li>
+            </div>
+            <div class="social-container aside-list-item">
+              <li class="aside-social aside-admin-nav-item uppercase"><p tabindex="0">social</p></li>
+            </div>
+          </ul>
+        </nav>
+      </section class="aside-categories-nav-container">
+      <hr class="aside-line-break"/>
+      <section>
+        <h3 class="aside-categories-nav-title">Categories</h3>
+        <nav>
+          <ul class="aside-categories-nav-list">
+            <div class="nav-list-item">
+              <label tabindex="0" class="aside-categories-nav-label">
+                  <li class="aside-categories-nav-item">
+                    <input type="radio" name="categories" id="cb-1" tabindex="-1"></input>
+                    <span>Administrative</span>
+                  </li>
+              </label>
+            </div>
+            <div class="nav-list-item">
+              <label tabindex="0" class="aside-categories-nav-label">
+                <li class="aside-categories-nav-item">
+                  <input type="radio" name="categories" id="cb-2" tabindex="-1"></input>
+                  <span>Design</span>
+                </li>
+              </label>
+            </div>
+            <div class="nav-list-item">
+              <label tabindex="0" class="aside-categories-nav-label">
+                <li class="aside-categories-nav-item">
+                  <input type="radio" name="categories" id="cb-3" tabindex="-1"></input>
+                  <span>Executive</span
+                </li>
+              </label>
+            </div>
+            <div class="nav-list-item">
+              <label tabindex="0" class="aside-categories-nav-label">
+                <li class="aside-categories-nav-item">
+                  <input type="radio" name="categories" id="cb-4" tabindex="-1"></input>
+                  <span>Human Resources</span>
+                </li>
+              </label>
+            </div>
+          </ul>
+        </nav>
+      </section>
+    </aside>
     <main>
       <section class="job-title-container">
         <article class="job-title">
@@ -131,7 +131,6 @@
         </article>
         <article class="job-title-button-container">
           <button class="button-open job-title-button">
-            <div>
               <img class="green-circle" src="images/icons/icon-open-green.svg" />
               <p>open</p>
           </button>
@@ -142,13 +141,13 @@
         <article class="main-top-nav-container">
           <nav class="main-top-nav">
             <ul class"main-top-nav-list">
-              <li class="first-list-item main-top-nav-list-item uppercase">summary</li>
-              <li class="main-top-nav-list-item uppercase">applicants</li>
-              <li class="main-top-nav-list-item uppercase">job board</li>
-              <li class="main-top-nav-list-item uppercase">interviews</li>
-              <li class="main-top-nav-list-item uppercase">activity</li>
-              <li class="main-top-nav-list-item uppercase">broadcast</li>
-              <li class="main-top-nav-list-item uppercase">notifications</li>
+              <li class="first-list-item main-top-nav-list-item uppercase" tabindex="0">summary</li>
+              <li class="main-top-nav-list-item uppercase" tabindex="0">applicants</li>
+              <li class="main-top-nav-list-item uppercase" tabindex="0">job board</li>
+              <li class="main-top-nav-list-item uppercase" tabindex="0">interviews</li>
+              <li class="main-top-nav-list-item uppercase" tabindex="0">activity</li>
+              <li class="main-top-nav-list-item uppercase" tabindex="0">broadcast</li>
+              <li class="main-top-nav-list-item uppercase" tabindex="0">notifications</li>
             </ul>
           </nav>
         </article>
@@ -159,14 +158,14 @@
               <img class="pie-chart-2 pie-chart" src="images/data-viz/graph-circle2.svg" alt="" />
               <img class="pie-chart-3 pie-chart" src="images/data-viz/graph-circle3.svg" alt="" />
         </article>
-        <article class="bar-graph-container">
-          <img class="bar-graph" src="images/data-viz/graph.png" />
-        </article>
         <article class="pie-graph-button-container">
           <button class="data-viz-button">TOTALS ⋅ Out of 5,231 views</button>
         </article>
+        <article class="bar-graph-container">
+          <img class="bar-graph" src="images/data-viz/graph.png" />
+        </article>
         <article class="bar-graph-button-container">
-          <button class="data-viz-button">APPLICANTS/DAY</button>
+          <button class="data-viz-button applicants-button">APPLICANTS/DAY</button>
         </article>
       </section>
       <section class="job-description-collapse">
@@ -216,9 +215,9 @@
         </article>
         <article class="social-media-and-links-and-email">
           <div class="social-media-buttons">
-            <button class="social-media-facebook-button social-button">Post to Facebook</button>
-            <button class="social-media-twitter-button social-button">Tweet this Job</button>
-            <button class="social-media-linked-in-button social-button">Post to LinkedIn</button>
+            <button class="social-media-facebook-button social-button"><span>Post to Facebook<span></button>
+            <button class="social-media-twitter-button social-button"><span>Tweet this Job<span></button>
+            <button class="social-media-linked-in-button social-button"><span>Post to LinkedIn<span></button>
           </div>
           <div class="link-box lb1">
             <h5 class="uppercase">
@@ -234,7 +233,7 @@
           <div class="link-box lb2">
             <h5 class="uppercase">
               <img class="link-icon" src="images/icons/icon-email-grey.svg" alt="" />
-              Link to this Job
+              Use the Button Widget
             </h5>
             <p>They key is to have every key, the key to open every door. </p>
             <div class="link-text-and-button">
@@ -243,9 +242,9 @@
             </div>
           </div>
           <div class="link-box lb3">
-            <h5>
+            <h5 class="uppercase">
               <img class="link-icon" src="images/icons/icon-widget-grey.svg" alt="" />
-              Link to this Job
+              Upload Resumes by Email
             </h5>
             <p>They key is to have every key, the key to open every door.</p>
             <div class="link-text-and-button last-item">
